@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="index.css" >
+  
+  <style>
+    html, body {
+        background:url("https://previews.123rf.com/images/anelina/anelina1106/anelina110600028/9842136-Sfondo-arcobaleno-onda-con-le-stelle-scintillanti-Archivio-Fotografico.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 100%;
+}
+
+.home-page {
+  
+        text-align: center;
+    font-family: arial;
+    color: black;
+  margin:0;
+  padding-top: 5vmax;
+  font-size: 1vmax;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    border: 2px solid #4CAF50;
+} 
+  </style>
+  
+  
+</head>
+<body> 
+
+  <div class="home-page">
+    <h1>katelyn clouds rock paper scissors game </h1>
+    <p>this is a game where we play rock paper scissors shoot </p>
+    <form method="POST" action="/results">
+    <input type="submit" value="rock" name="input">
+     <input type="submit" value="paper" name="input">
+     <input type="submit" value="scissors" name="input">
+     </form>
+  </div>
+
+</body>
+</html>
+

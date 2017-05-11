@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+  
+    <style>
+    html, body {
+        background:url("https://previews.123rf.com/images/anelina/anelina1106/anelina110600028/9842136-Sfondo-arcobaleno-onda-con-le-stelle-scintillanti-Archivio-Fotografico.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 100%;
+}
+
+.results {
+  font-size: 2vmax;
+        text-align: center;
+    font-family: arial;
+    color: black;
+  margin:0;
+  padding-top: 10vmax;
+
+}
+
+.back-button {
+  margin-top: 2vmax;
+  text-align: center;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    border: 2px solid #4CAF50;
+} 
+  </style>
+</head>
+<body> 
+
+  <div class="results-page">
+      <div class="results">
+        <%= @game1.rps %>
+      </div>
+      <div class="back-button">
+        <a href="/">Try again</a>
+      </div>
+  </div>
+</body>
+</html>
